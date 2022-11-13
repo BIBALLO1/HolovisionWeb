@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root{
+	--bg-color: rgb(221, 224, 237);
+	--bg-color-hover: rgb(230, 233, 247);
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--bg-color);
+}
+
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*Nav*/
+
+.container{
+	overflow: hidden;
+}
+
+.nav{
+	position: fixed;
+
+	padding: 0;
+	top: 0;
+
+	height: 5em;
+
+	width: 100%;
+	left: 0;
+
+	display: flex;
+	align-items: center;
+	background-color: var(--bg-color);
+
+	z-index: 1;
+
+	transition: background-color 0.5s, height 0.5s;
+}
+
+.nav:hover{
+	background-color: var(--bg-color-hover);
+	height: 5.5em;
+}
+
+.nav__title{
+	padding: 1em;
+	padding-left: 5em;
+	font-weight: 700;
+}
+
+.nav__links{
+	margin-left: auto;
+	padding: 0;
+	padding-right: 5em;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+}
+
+.nav__items{
+	list-style: none;
+	padding: 2em;
+}
+
+.nav__link{
+	text-decoration: none;
+	color: black;
+	transition: color 0.1s;
+}
+
+.nav__link:hover{
+	color: rgb(48, 44, 120);
+	offset: 0.5em;
+}
+
+.invisible{
+	height: 6em;
+}
+
+/*Elems*/
+
+.elems{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.elems__list{
+	display: grid;
+	grid-auto-flow: row;
+	grid-auto-rows: 20em;
+	width: 50%;
+	justify-items: center;
+	padding-left: 0;
+}
+
+.elem{
+	display: grid;
+	align-self: center;
+	grid-auto-flow: column;
+	grid-auto-columns: 50%;
+	width: 100%;
+	padding: 5em;
+	background-color: var(--bg-color);
+
+	transition: padding 0.25s, background-color 0.25s;
+}
+
+.elem:hover{
+	padding: 5.25em;
+	background-color: var(--bg-color-hover);
+}
+
+.elem__text{
+	overflow: hidden;
+	text-overflow: clip;
+	word-wrap: break-word;
+	max-width: 30em;
+	vertical-align: middle;
+}
+
+.elem__image{
+	overflow: hidden;
+	text-overflow:clip;
+	word-wrap: break-word;
+	max-width: 20em;
+}
+
+.left{
+	justify-self: left;
+}
+
+.right{
+	justify-self: right;
+}
