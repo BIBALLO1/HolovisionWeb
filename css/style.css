@@ -228,7 +228,7 @@ body{
 }
 
 .rm__elem:hover{
-	padding: 2em;
+	padding: 1.5em;
 	background-color: var(--bg-color-hover);
 }
 
