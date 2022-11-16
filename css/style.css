@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
 :root{
-	--bg-color: rgb(221, 224, 237);
+	--bg-color: rgb(174, 182, 223);
 	--bg-color-hover: rgb(230, 233, 247);
 }
 
@@ -228,7 +228,7 @@ body{
 }
 
 .rm__elem:hover{
-	padding: 1.5em;
+	padding: 1.25em;
 	background-color: var(--bg-color-hover);
 }
 
