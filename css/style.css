@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
 :root{
@@ -222,6 +221,8 @@ body{
 
 	margin: 1em;
 	padding: 1em;
+
+	background-color: var(--bg-color);
 
 	width: 15em;
 	transition: padding 0.5s, background-color 0.5s;
