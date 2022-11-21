@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
 :root{
-	--bg-color: rgb(174, 182, 223);
-	--bg-color-hover: rgb(230, 233, 247);
+	--bg-color: #D6E4E5;
+	--bg-color-hover: #EFF5F5;
+	--secondary-color-1: #497174;
+	--secondary-color-2: #EB6440;
 }
 
 body{
@@ -97,7 +99,7 @@ body{
 }
 
 .nav__link:hover{
-	color: rgb(48, 44, 120);
+	color: #EB6440;
 	offset: 0.5em;
 }
 
@@ -239,4 +241,41 @@ body{
 	word-wrap: break-word;
 	max-width: 30em;
 	vertical-align: middle;
+}
+
+/*Decoration*/
+.decoration__r{
+	background-color: #EB6440;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	height: 30%;
+	width: 10%;
+	clip-path: polygon(100% 0, 100% 100%, 20% 100%, 25% 50%);
+
+	transition: width 0.5s, height 0.3s;
+}
+
+.decoration__r:hover{
+	width: 11%;
+	height: 29%;
+}
+
+.decoration__l{
+	background-color: #497174;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 3;
+	height: 30%;
+	width: 10%;
+	clip-path: polygon(0 0, 75% 40%, 60% 100%, 0% 100%);
+
+	transition: width 0.5s, height 0.3s;
+}
+
+.decoration__l:hover{
+	width: 11%;
+	height: 29%;
 }
